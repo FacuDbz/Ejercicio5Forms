@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Speaker Submission</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main class="page">
+
+        <section class="intro">
+            <h1>Speaker Submission</h1>
+
+            <p>
+                Want to speak at our fake conference?<br>
+                Fill out this form.
+            </p>
+        </section>
+
+
+        <form class="submission-form">
+
+            <!-- NAME -->
+            <div class="form-group">
+
+                <label for="name">
+                    Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                >
+
+            </div>
+
+
+            <!-- EMAIL -->
+            <div class="form-group">
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="you@example.com"
+                >
+
+            </div>
+
+
+            <!-- TYPE OF TALK -->
+            <div class="form-group">
+
+                <label>
+                    Type of Talk
+                </label>
+
+                <div class="radio-group">
+
+                    <label class="radio-option">
+                        <input
+                            type="radio"
+                            name="talk"
+                            value="main-stage"
+                        >
+
+                        <span>Main Stage</span>
+                    </label>
+
+
+                    <label class="radio-option">
+                        <input
+                            type="radio"
+                            name="talk"
+                            value="workshop"
+                        >
+
+                        <span>Workshop</span>
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <!-- T-SHIRT -->
+            <div class="form-group">
+
+                <label for="shirt">
+                    T-Shirt Size
+                </label>
+
+                <select id="shirt" name="shirt">
+
+                    <option>Extra Small</option>
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                    <option>Extra Large</option>
+
+                </select>
+
+            </div>
+
+
+            <!-- ABSTRACT -->
+            <div class="form-group abstract-group">
+
+                <label for="abstract">
+                    Abstract
+                </label>
+
+                <div class="abstract-field">
+
+                    <textarea
+                        id="abstract"
+                        name="abstract"
+                    ></textarea>
+
+                    <span class="help-text">
+                        Describe your talk in 500 words or less
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- CHECKBOX -->
+            <div class="availability">
+
+                <input
+                    type="checkbox"
+                    id="available"
+                    name="available"
+                >
+
+                <label for="available">
+                    I'm actually available the date of the talk
+                </label>
+
+            </div>
+
+
+            <!-- BUTTON -->
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+    </main>
+
+</body>
+</html>
