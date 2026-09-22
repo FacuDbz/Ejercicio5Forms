@@ -24,141 +24,26 @@
         </section>
 
 
-        <form class="submission-form">
+<form
+    class="submission-form"
+    name="speaker-submission"
+    method="POST"
+    data-netlify="true"
+    netlify-honeypot="bot-field"
+>
 
-            <!-- NAME -->
-            <div class="form-group">
+    <!-- Netlify necesita este input oculto para poder parsear el form en el build -->
+    <input type="hidden" name="form-name" value="speaker-submission">
 
-                <label for="name">
-                    Name
-                </label>
+    <!-- Honeypot anti-spam (opcional pero recomendado) -->
+    <p style="display:none;">
+        <label>No llenar esto: <input name="bot-field"></label>
+    </p>
 
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                >
+    <!-- resto de tu formulario igual -->
+    ...
 
-            </div>
-
-
-            <!-- EMAIL -->
-            <div class="form-group">
-
-                <label for="email">
-                    Email
-                </label>
-
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="you@example.com"
-                >
-
-            </div>
-
-
-            <!-- TYPE OF TALK -->
-            <div class="form-group">
-
-                <label>
-                    Type of Talk
-                </label>
-
-                <div class="radio-group">
-
-                    <label class="radio-option">
-                        <input
-                            type="radio"
-                            name="talk"
-                            value="main-stage"
-                        >
-
-                        <span>Main Stage</span>
-                    </label>
-
-
-                    <label class="radio-option">
-                        <input
-                            type="radio"
-                            name="talk"
-                            value="workshop"
-                        >
-
-                        <span>Workshop</span>
-                    </label>
-
-                </div>
-
-            </div>
-
-
-            <!-- T-SHIRT -->
-            <div class="form-group">
-
-                <label for="shirt">
-                    T-Shirt Size
-                </label>
-
-                <select id="shirt" name="shirt">
-
-                    <option>Extra Small</option>
-                    <option>Small</option>
-                    <option>Medium</option>
-                    <option>Large</option>
-                    <option>Extra Large</option>
-
-                </select>
-
-            </div>
-
-
-            <!-- ABSTRACT -->
-            <div class="form-group abstract-group">
-
-                <label for="abstract">
-                    Abstract
-                </label>
-
-                <div class="abstract-field">
-
-                    <textarea
-                        id="abstract"
-                        name="abstract"
-                    ></textarea>
-
-                    <span class="help-text">
-                        Describe your talk in 500 words or less
-                    </span>
-
-                </div>
-
-            </div>
-
-
-            <!-- CHECKBOX -->
-            <div class="availability">
-
-                <input
-                    type="checkbox"
-                    id="available"
-                    name="available"
-                >
-
-                <label for="available">
-                    I'm actually available the date of the talk
-                </label>
-
-            </div>
-
-
-            <!-- BUTTON -->
-            <button type="submit">
-                Submit
-            </button>
-
-        </form>
+</form>
 
     </main>
 
